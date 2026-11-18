@@ -26,6 +26,9 @@ jobs:
         with:
           node-version: 20
 
+      # snk runs in a container and leaves dist/ owned by root
+      - run: sudo chown -R "$USER" dist
+
       - run: node .github/scripts/languages.js ${{ github.repository_owner }} dist/languages.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
