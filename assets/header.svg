@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320">
+  <style>
+    .title { font: 900 120px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; letter-spacing: 24px; }
+    .meta { font: 600 11px Consolas, 'SFMono-Regular', Menlo, monospace; letter-spacing: 2px; }
+    .bar { animation: bar 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .spot { animation: spot 9s ease-in-out infinite alternate; }
+    .sweep { animation: sweep 3.6s linear infinite; }
+    .blink { animation: blink 1s steps(1) infinite; }
+    @keyframes bar { 0%, 100% { opacity: .15; transform: scaleY(.45) } 40% { opacity: 1; transform: scaleY(1) } }
+    @keyframes spot { from { transform: translateX(-280px) } to { transform: translateX(280px) } }
+    @keyframes sweep { from { transform: translateX(-260px) } to { transform: translateX(1000px) } }
+    @keyframes blink { 0% { opacity: 1 } 50% { opacity: 0 } }
+  </style>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" x2="260" y1="0" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-300 0" to="1300 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#d9d9d9"/>
+      <stop offset="1" stop-color="#6b6b6b"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".04"/>
+    </pattern>
+    <filter id="blur" x="-50%" y="-300%" width="200%" height="700%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <clipPath id="card"><rect width="1000" height="320" rx="18"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1000" height="320" fill="#050505"/>
+    <rect width="1000" height="320" fill="url(#grid)"/>
+
+    <!-- drifting spotlight -->
+    <ellipse class="spot" cx="500" cy="150" rx="380" ry="200" fill="url(#glow)"/>
+
+    <!-- pulse bars -->
+    <g fill="#ffffff">
+      <rect class="bar" x="436" y="26" width="8" height="26" rx="4" style="animation-delay: 0s"/>
+      <rect class="bar" x="452" y="26" width="8" height="26" rx="4" style="animation-delay: .1s"/>
+      <rect class="bar" x="468" y="26" width="8" height="26" rx="4" style="animation-delay: .2s"/>
+      <rect class="bar" x="484" y="26" width="8" height="26" rx="4" style="animation-delay: .3s"/>
+      <rect class="bar" x="500" y="26" width="8" height="26" rx="4" style="animation-delay: .4s"/>
+      <rect class="bar" x="516" y="26" width="8" height="26" rx="4" style="animation-delay: .5s"/>
+      <rect class="bar" x="532" y="26" width="8" height="26" rx="4" style="animation-delay: .6s"/>
+      <rect class="bar" x="548" y="26" width="8" height="26" rx="4" style="animation-delay: .7s"/>
+      <rect class="bar" x="564" y="26" width="8" height="26" rx="4" style="animation-delay: .8s"/>
+    </g>
+
+    <!-- name, with a shine passing over it -->
+    <text class="title" x="512" y="210" text-anchor="middle" fill="url(#txt)">JACOB</text>
+    <text class="title" x="512" y="210" text-anchor="middle" fill="url(#shine)">JACOB</text>
+
+    <!-- status line -->
+    <text class="meta" x="28" y="300" fill="#6e6e6e"><tspan class="blink" fill="#ffffff">●</tspan> ONLINE</text>
+    <text class="meta" x="972" y="300" text-anchor="end" fill="#6e6e6e">LUA · JAVA · PYTHON</text>
+
+    <!-- scanner rule -->
+    <rect x="0" y="314" width="1000" height="2" fill="url(#line)"/>
+    <rect class="sweep" x="0" y="312" width="260" height="6" fill="url(#beam)" filter="url(#blur)"/>
+    <rect class="sweep" x="0" y="314" width="260" height="2" fill="url(#beam)"/>
+  </g>
+</svg>

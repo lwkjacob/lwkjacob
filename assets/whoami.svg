@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380">
+  <style>
+    text { font-family: Consolas, 'SFMono-Regular', Menlo, monospace; font-size: 17px; }
+    .p { fill: #6e6e6e; }
+    .c { fill: #ffffff; font-weight: 700; }
+    .o { fill: #bdbdbd; opacity: 0; animation: in .5s ease-out forwards; }
+    .k { fill: #ffffff; }
+    .dim { fill: #5a5a5a; }
+    .row { opacity: 0; animation: show .01s linear forwards; }
+    .blink { animation: blink 1s steps(1) infinite; }
+    .title { font-size: 12px; letter-spacing: 2px; fill: #6e6e6e; }
+    @keyframes in { from { opacity: 0; transform: translateX(-6px) } to { opacity: 1; transform: none } }
+    @keyframes show { to { opacity: 1 } }
+    @keyframes blink { 0% { opacity: 1 } 50% { opacity: 0 } }
+  </style>
+  <defs>
+    <clipPath id="c1"><rect x="128" y="64" height="26" width="0"><animate attributeName="width" from="0" to="320" begin="0.4s" dur="0.7s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c2"><rect x="128" y="132" height="26" width="0"><animate attributeName="width" from="0" to="320" begin="1.9s" dur="0.9s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c3"><rect x="128" y="200" height="26" width="0"><animate attributeName="width" from="0" to="320" begin="3.6s" dur="0.9s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c4"><rect x="128" y="268" height="26" width="0"><animate attributeName="width" from="0" to="320" begin="5.3s" dur="0.8s" fill="freeze"/></rect></clipPath>
+    <linearGradient id="fade" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".05"/>
+      <stop offset=".4" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- window -->
+  <rect x=".5" y=".5" width="999" height="379" rx="14" fill="#0a0a0a" stroke="#262626"/>
+  <rect x=".5" y=".5" width="999" height="379" rx="14" fill="url(#fade)"/>
+  <path d="M1 40H999" stroke="#1f1f1f"/>
+  <circle cx="24" cy="20" r="6" fill="#3a3a3a"/>
+  <circle cx="44" cy="20" r="6" fill="#5a5a5a"/>
+  <circle cx="64" cy="20" r="6" fill="#8a8a8a"/>
+  <text class="title" x="500" y="25" text-anchor="middle">jacob@github: ~</text>
+
+  <!-- whoami -->
+  <text x="30" y="82"><tspan class="p">~/jacob $</tspan></text>
+  <text class="c" x="128" y="82" clip-path="url(#c1)">whoami</text>
+  <text class="o" x="30" y="110" style="animation-delay: 1.2s">Jacob <tspan class="dim">·</tspan> <tspan class="k">Computer Science student</tspan></text>
+
+  <!-- languages -->
+  <g class="row" style="animation-delay: 1.7s"><text x="30" y="150" class="p">~/jacob $</text></g>
+  <text class="c" x="128" y="150" clip-path="url(#c2)">cat languages.txt</text>
+  <text class="o" x="30" y="178" style="animation-delay: 2.9s"><tspan class="k">Lua</tspan>  <tspan class="dim">/</tspan>  <tspan class="k">Java</tspan>  <tspan class="dim">/</tspan>  <tspan class="k">Python</tspan>  <tspan class="dim">/</tspan>  HTML  <tspan class="dim">/</tspan>  CSS</text>
+
+  <!-- interests -->
+  <g class="row" style="animation-delay: 3.4s"><text x="30" y="218" class="p">~/jacob $</text></g>
+  <text class="c" x="128" y="218" clip-path="url(#c3)">cat interests.txt</text>
+  <text class="o" x="30" y="246" style="animation-delay: 4.6s">game systems  <tspan class="dim">/</tspan>  interactive UIs  <tspan class="dim">/</tspan>  open source</text>
+
+  <!-- status -->
+  <g class="row" style="animation-delay: 5.1s"><text x="30" y="286" class="p">~/jacob $</text></g>
+  <text class="c" x="128" y="286" clip-path="url(#c4)">echo $STATUS</text>
+  <text class="o" x="30" y="314" style="animation-delay: 6.2s">studying, building things, and giving them away</text>
+
+  <!-- idle prompt -->
+  <g class="row" style="animation-delay: 6.8s">
+    <text x="30" y="354" class="p">~/jacob $</text>
+    <rect class="blink" x="128" y="339" width="10" height="19" fill="#ffffff"/>
+  </g>
+</svg>

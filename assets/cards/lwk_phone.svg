@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="160" viewBox="0 0 480 160">
+  <style>
+    .t { font: 700 22px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #f0f3f6; }
+    .d { font: 400 14px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #8b949e; }
+    .u { font: 700 11px Consolas, Menlo, monospace; letter-spacing: 2px; fill: #6e7681; }
+    .lang { font: 400 12px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #c9d1d9; }
+    .tag { font: 700 12px Consolas, Menlo, monospace; letter-spacing: .5px; fill: #0d1117; }
+    .pulse { animation: p 1.4s ease-in-out infinite; }
+    @keyframes p { 0%, 100% { opacity: 1 } 50% { opacity: .2 } }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".07"/>
+      <stop offset=".45" stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip"><rect x=".5" y=".5" width="479" height="159" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="480" height="160" fill="#0d1117"/>
+    <rect width="480" height="160" fill="url(#bg)"/>
+    <rect width="5" height="160" fill="#ffffff" opacity=".9"/>
+  </g>
+  <rect x=".5" y=".5" width="479" height="159" rx="14" fill="none" stroke="#30363d"/>
+  <text x="30" y="46" class="t">LWK Phone</text>
+  <circle class="pulse" cx="420.8" cy="38" r="4" fill="#ffffff"/>
+  <text x="452" y="42" text-anchor="end" class="u">03</text>
+  <text x="30" y="78" class="d">26 apps, voice and video calls, a full San Andreas</text>
+  <text x="30" y="99" class="d">map, themes and community apps at runtime.</text>
+  <circle cx="35" cy="131" r="5" fill="#bdbdbd"/><text x="46" y="135" class="lang">TypeScript</text><circle cx="143" cy="131" r="5" fill="#8a8a8a"/><text x="154" y="135" class="lang">React</text><circle cx="214" cy="131" r="5" fill="#ffffff"/><text x="225" y="135" class="lang">Lua</text>
+  <rect x="380" y="120" width="70" height="20" rx="10" fill="#ffffff"/>
+  <text x="415" y="134" text-anchor="middle" class="tag">FiveM</text>
+</svg>
