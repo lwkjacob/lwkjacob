@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="236" viewBox="0 0 1000 236">
+  <style>
+    text { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+    .t { font-size: 18px; font-weight: 700; fill: #ffffff; }
+    .s { font: 600 11px Consolas, Menlo, monospace; letter-spacing: 2px; fill: #6e6e6e; }
+    .n { font-size: 15px; fill: #e6e6e6; }
+    .v { font: 600 14px Consolas, Menlo, monospace; fill: #ffffff; }
+    .in { opacity: 0; animation: in .5s ease-out forwards; }
+    @keyframes in { from { opacity: 0; transform: translateY(4px) } to { opacity: 1; transform: none } }
+  </style>
+  <rect x=".5" y=".5" width="999" height="235" rx="14" fill="#0d1117"/>
+  <text x="30" y="42" class="t">Languages</text>
+  <text x="970" y="42" class="s" text-anchor="end">ACROSS 10 REPOS · BY BYTES</text>
+  <rect x="30" y="70" width="940" height="14" rx="3" fill="#161616"/>
+    <rect x="30.0" y="70" height="14" rx="3" fill="#ffffff" width="0"><animate attributeName="width" from="0" to="626.7" begin="0.20s" dur="0.6s" fill="freeze"/></rect>
+    <rect x="659.7" y="70" height="14" rx="3" fill="#d6d6d6" width="0"><animate attributeName="width" from="0" to="106.2" begin="0.35s" dur="0.6s" fill="freeze"/></rect>
+    <rect x="768.9" y="70" height="14" rx="3" fill="#adadad" width="0"><animate attributeName="width" from="0" to="94.5" begin="0.50s" dur="0.6s" fill="freeze"/></rect>
+    <rect x="866.4" y="70" height="14" rx="3" fill="#858585" width="0"><animate attributeName="width" from="0" to="48.9" begin="0.65s" dur="0.6s" fill="freeze"/></rect>
+    <rect x="918.3" y="70" height="14" rx="3" fill="#636363" width="0"><animate attributeName="width" from="0" to="48.7" begin="0.80s" dur="0.6s" fill="freeze"/></rect>
+    <g class="in" style="animation-delay:0.50s">
+      <circle cx="36" cy="123" r="5" fill="#ffffff"/>
+      <text x="50" y="128" class="n">Lua</text>
+      <text x="303.3333333333333" y="128" class="v" text-anchor="end">67.0%</text>
+      <rect x="30" y="140" width="273.3333333333333" height="3" rx="1.5" fill="#1f1f1f"/>
+      <rect x="30" y="140" height="3" rx="1.5" fill="#ffffff" width="0"><animate attributeName="width" from="0" to="183.1" begin="0.60s" dur="0.8s" fill="freeze"/></rect>
+    </g>
+    <g class="in" style="animation-delay:0.62s">
+      <circle cx="349.3333333333333" cy="123" r="5" fill="#d6d6d6"/>
+      <text x="363.3333333333333" y="128" class="n">JavaScript</text>
+      <text x="616.6666666666666" y="128" class="v" text-anchor="end">11.6%</text>
+      <rect x="343.3333333333333" y="140" width="273.3333333333333" height="3" rx="1.5" fill="#1f1f1f"/>
+      <rect x="343.3333333333333" y="140" height="3" rx="1.5" fill="#d6d6d6" width="0"><animate attributeName="width" from="0" to="31.8" begin="0.72s" dur="0.8s" fill="freeze"/></rect>
+    </g>
+    <g class="in" style="animation-delay:0.74s">
+      <circle cx="662.6666666666666" cy="123" r="5" fill="#adadad"/>
+      <text x="676.6666666666666" y="128" class="n">TypeScript</text>
+      <text x="930" y="128" class="v" text-anchor="end">10.4%</text>
+      <rect x="656.6666666666666" y="140" width="273.3333333333333" height="3" rx="1.5" fill="#1f1f1f"/>
+      <rect x="656.6666666666666" y="140" height="3" rx="1.5" fill="#adadad" width="0"><animate attributeName="width" from="0" to="28.3" begin="0.84s" dur="0.8s" fill="freeze"/></rect>
+    </g>
+    <g class="in" style="animation-delay:0.86s">
+      <circle cx="36" cy="175" r="5" fill="#858585"/>
+      <text x="50" y="180" class="n">HTML</text>
+      <text x="303.3333333333333" y="180" class="v" text-anchor="end">5.5%</text>
+      <rect x="30" y="192" width="273.3333333333333" height="3" rx="1.5" fill="#1f1f1f"/>
+      <rect x="30" y="192" height="3" rx="1.5" fill="#858585" width="0"><animate attributeName="width" from="0" to="15.1" begin="0.96s" dur="0.8s" fill="freeze"/></rect>
+    </g>
+    <g class="in" style="animation-delay:0.98s">
+      <circle cx="349.3333333333333" cy="175" r="5" fill="#636363"/>
+      <text x="363.3333333333333" y="180" class="n">CSS</text>
+      <text x="616.6666666666666" y="180" class="v" text-anchor="end">5.5%</text>
+      <rect x="343.3333333333333" y="192" width="273.3333333333333" height="3" rx="1.5" fill="#1f1f1f"/>
+      <rect x="343.3333333333333" y="192" height="3" rx="1.5" fill="#636363" width="0"><animate attributeName="width" from="0" to="15.0" begin="1.08s" dur="0.8s" fill="freeze"/></rect>
+    </g>
+</svg>
